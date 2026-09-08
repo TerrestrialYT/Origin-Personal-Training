@@ -4,7 +4,7 @@ A bespoke, highly optimized, single-page website built for **Origin Personal Tra
 
 Designed with a sleek, monochromatic aesthetic, this project focuses on luxury branding and a streamlined lead-generation funnel to drive high-ticket client acquisitions.
 
-**Live Demo:** [View Live Site Here]([https://terrestrialyt.github.io/YOUR-REPO-NAME-HERE](https://terrestrialyt.github.io/Origin-Personal-Training/))
+**Live Demo:** [[View Live Site Here]([https://terrestrialyt.github.io/YOUR-REPO-NAME-HERE](https://terrestrialyt.github.io/Origin-Personal-Training/))](https://terrestrialyt.github.io/Origin-Personal-Training/)
 
 ## ✨ Key Features
 
