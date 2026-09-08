@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origin Personal Training | Elite Fitness in Singapore</title>
+    <meta name="description" content="Exclusive, high-end personal training in Singapore. Bespoke fitness programs designed for profound, lasting transformations.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#0a0a0a',
+                        charcoal: '#121212',
+                        slate: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        /* Hide scrollbar for clean look but allow scrolling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-white selection:text-black">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="block">
+                        <img src="logo.jpg" alt="Origin Personal Training" class="h-12 w-auto object-contain">
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#philosophy" class="text-sm font-medium tracking-widest text-gray-300 hover:text-white transition-colors uppercase">Philosophy</a>
+                    <a href="#services" class="text-sm font-medium tracking-widest text-gray-300 hover:text-white transition-colors uppercase">Services</a>
+                    <a href="#locations" class="text-sm font-medium tracking-widest text-gray-300 hover:text-white transition-colors uppercase">Locations</a>
+                </nav>
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-6 py-3 text-sm font-semibold tracking-widest uppercase hover:bg-gray-200 transition-colors">
+                        Start Your Journey
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-gray-300 hover:text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-black border-b border-white/10" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#philosophy" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white tracking-widest uppercase">Philosophy</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white tracking-widest uppercase">Services</a>
+                <a href="#locations" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white tracking-widest uppercase">Locations</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 text-base font-medium text-black bg-white hover:bg-gray-200 tracking-widest uppercase mt-4 text-center">Start Your Journey</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center pt-24 overflow-hidden">
+        <!-- Background Image with Overlay & Fallback -->
+        <div class="absolute inset-0 z-0 bg-gradient-to-br from-slate-900 via-black to-zinc-900" style="background-image: url('hero.jpg'); background-size: cover; background-position: center; background-blend-mode: luminosity;">
+            <!-- Gradient overlays for cinematic depth -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider text-white mb-6 uppercase">
+                Redefine<br/><span style="background: linear-gradient(to right, #ffffff, #6b7280); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Your Limits</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
+                Elite personal training in the heart of Singapore. Bespoke fitness programs designed for profound, lasting transformations.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="bg-white text-black px-8 py-4 text-sm font-semibold tracking-widest uppercase hover:bg-gray-200 transition-colors">
+                    Book a Consultation
+                </a>
+                <a href="https://wa.me/6591739686" target="_blank" rel="noopener noreferrer" class="border border-white text-white px-8 py-4 text-sm font-semibold tracking-widest uppercase hover:bg-white hover:text-black transition-colors">
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 bg-charcoal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="font-heading text-3xl md:text-5xl font-bold tracking-widest uppercase mb-8">The Origin Standard</h2>
+                    <div class="space-y-6 text-gray-400 font-light leading-relaxed text-lg">
+                        <p>
+                            We do not believe in generic routines or quick fixes. At Origin, we engineer highly personalized, science-backed training protocols designed specifically for busy professionals and those who demand the absolute best from their bodies.
+                        </p>
+                        <p>
+                            Every aspect of your transformation is meticulously planned, tracked, and optimized. From biomechanics to metabolic conditioning, we build a bespoke roadmap to your ultimate physical potential.
+                        </p>
+                    </div>
+                    <div class="mt-10">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-white tracking-widest uppercase text-sm font-semibold hover:text-gray-300 transition-colors group">
+                            Discover Our Method
+                            <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-0 relative" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="aspect-[4/5] relative">
+                        <div class="absolute inset-0 bg-white translate-x-4 translate-y-4"></div>
+                        <img src="gymhero.jpg" alt="Origin Trainer" class="relative z-10 w-full h-full object-cover border border-white/20 grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-3xl md:text-5xl font-bold tracking-widest uppercase mb-4">Premium Services</h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate p-8 border border-white/5 hover:border-white/20 transition-colors group" data-aos="fade-up" data-aos-delay="0">
+                    <h3 class="font-heading tracking-widest text-xl mb-4 uppercase">1-on-1 Training</h3>
+                    <p class="text-gray-400 font-light text-sm mb-8 line-clamp-3">Exclusive, undivided attention ensuring perfect execution, progressive overload, and maximum efficiency in every session.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="text-xs tracking-widest uppercase text-white border-b border-white/30 pb-1 group-hover:border-white transition-colors">Inquire Now</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate p-8 border border-white/5 hover:border-white/20 transition-colors group" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-heading tracking-widest text-xl mb-4 uppercase">Body Recomposition</h3>
+                    <p class="text-gray-400 font-light text-sm mb-8 line-clamp-3">Strategic protocols designed to strip body fat while simultaneously building lean, dense muscle mass.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="text-xs tracking-widest uppercase text-white border-b border-white/30 pb-1 group-hover:border-white transition-colors">Inquire Now</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate p-8 border border-white/5 hover:border-white/20 transition-colors group" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-heading tracking-widest text-xl mb-4 uppercase">Strength & Cond.</h3>
+                    <p class="text-gray-400 font-light text-sm mb-8 line-clamp-3">Advanced periodization methods to elevate athletic performance, raw strength, and cardiovascular capacity.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="text-xs tracking-widest uppercase text-white border-b border-white/30 pb-1 group-hover:border-white transition-colors">Inquire Now</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate p-8 border border-white/5 hover:border-white/20 transition-colors group" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="font-heading tracking-widest text-xl mb-4 uppercase">Nutritional Arch.</h3>
+                    <p class="text-gray-400 font-light text-sm mb-8 line-clamp-3">Bespoke macronutrient prescriptions and lifestyle integration to fuel recovery and accelerate results.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="text-xs tracking-widest uppercase text-white border-b border-white/30 pb-1 group-hover:border-white transition-colors">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-black border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-3xl md:text-5xl font-bold tracking-widest uppercase mb-4">The Origin Effect</h2>
+                <div class="w-24 h-1 bg-white mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-charcoal p-10 border border-white/5 relative group hover:border-white/20 transition-colors" data-aos="fade-up" data-aos-delay="0">
+                    <span class="absolute top-6 left-6 text-6xl text-white/10 font-heading leading-none">"</span>
+                    <p class="text-gray-400 font-light text-base leading-relaxed mb-8 relative z-10 italic">
+                        "Origin completely transformed my approach to fitness. The level of detail, science, and personalization is simply unmatched in Singapore."
+                    </p>
+                    <div class="relative z-10">
+                        <p class="text-white font-semibold tracking-widest text-sm uppercase">Marcus T.</p>
+                        <p class="text-gray-500 font-light text-xs tracking-wider uppercase mt-1">Chief Executive</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-charcoal p-10 border border-white/5 relative group hover:border-white/20 transition-colors" data-aos="fade-up" data-aos-delay="100">
+                    <span class="absolute top-6 left-6 text-6xl text-white/10 font-heading leading-none">"</span>
+                    <p class="text-gray-400 font-light text-base leading-relaxed mb-8 relative z-10 italic">
+                        "I achieved more in 12 weeks here than in three years training independently. It's an elite environment for those serious about results."
+                    </p>
+                    <div class="relative z-10">
+                        <p class="text-white font-semibold tracking-widest text-sm uppercase">Sarah L.</p>
+                        <p class="text-gray-500 font-light text-xs tracking-wider uppercase mt-1">Entrepreneur</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-charcoal p-10 border border-white/5 relative group hover:border-white/20 transition-colors" data-aos="fade-up" data-aos-delay="200">
+                    <span class="absolute top-6 left-6 text-6xl text-white/10 font-heading leading-none">"</span>
+                    <p class="text-gray-400 font-light text-base leading-relaxed mb-8 relative z-10 italic">
+                        "The nutritional architecture and strict biomechanical focus finally helped me break past plateaus safely. Worth every cent."
+                    </p>
+                    <div class="relative z-10">
+                        <p class="text-white font-semibold tracking-widest text-sm uppercase">David K.</p>
+                        <p class="text-gray-500 font-light text-xs tracking-wider uppercase mt-1">Managing Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="py-24 bg-charcoal relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="font-heading text-3xl md:text-5xl font-bold tracking-widest uppercase mb-4">Location</h2>
+                <div class="w-24 h-1 bg-white"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                <!-- Google Map (Left) -->
+                <div data-aos="fade-right" data-aos-delay="0" class="w-full h-[400px] md:h-[500px] border border-white/10 p-1 bg-black">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31910.522653209326!2d103.81388350000002!3d1.2847487000000026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19d6be2e79a9%3A0x75be7da127ed24e8!2sOrigin%20Personal%20Training!5e0!3m2!1sen!2sin!4v1788861856636!5m2!1sen!2sin" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                
+                <!-- Address (Right) -->
+                <div data-aos="fade-left" data-aos-delay="100" class="flex flex-col justify-center">
+                    <h3 class="font-heading tracking-widest text-2xl md:text-3xl uppercase mb-8 text-white">Origin Personal Training</h3>
+                    <div class="space-y-4 text-gray-300 font-light text-lg leading-relaxed">
+                        <p>
+                            163 Tanglin Rd, #02-118, Tanglin Mall<br/>
+                            50 Raffles Pl, #02-05, Singapore Land Tower<br/>
+                            Singapore 247933
+                        </p>
+                    </div>
+                    <div class="mt-12">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5zu_lJEgxyARo1jOb7ZNcVbGt_k-iBHhE3xu3KGOidaiyow/viewform" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-white tracking-widest uppercase text-sm font-semibold hover:text-gray-400 transition-colors group">
+                            Book a Consultation
+                            <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            <img src="logo.jpg" alt="Origin Logo" class="h-8 mb-8 opacity-50">
+            
+            <div class="flex space-x-8 mb-12">
+                <a href="https://www.instagram.com/origin.personaltraining/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white transition-colors">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="https://wa.me/6591739686" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white transition-colors">
+                    <span class="sr-only">WhatsApp</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="text-gray-500 font-light text-sm mb-4">+65 9173 9686</p>
+            <p class="text-gray-600 font-light text-xs">
+                Built by <a href="https://terrestrialyt.com/" target="_blank" rel="noopener noreferrer" class="hover:text-gray-400 transition-colors">TerrestrialYT</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Origin Personal Training",
+  "description": "Exclusive, high-end personal training in Singapore. Bespoke fitness programs designed for profound, lasting transformations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
